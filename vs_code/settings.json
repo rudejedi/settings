@@ -1,0 +1,69 @@
+{
+    // Telemetry
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "extensions.ignoreRecommendations": true,
+    "workbench.enableExperiments": false,
+    "update.showReleaseNotes": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    //Python
+    "python.pythonPath": "/usr/bin/python3",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.autoComplete.extraPaths": [],
+    // Workbench Themes and Icons
+    "workbench.iconTheme": "ayu",
+    // Workbench Settings
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.startupEditor": "newUntitledFile",
+    // Editor Fonts
+    "editor.fontSize": 16,
+    "editor.fontWeight": "500",
+    "editor.fontFamily": "Source Code Pro",
+    // Debug & Terminal Fonts
+    "debug.console.fontFamily": "Source Code Pro",
+    "debug.console.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontWeight": "600",
+    // Editor Formating
+    "python.formatting.provider": "black",
+    "editor.formatOnSave": true,
+    // Code Runner
+    "code-runner.executorMap": {
+        "python": "$pythonPath -u $fullFileName"
+    },
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.showExecutionMessage": false,
+    "code-runner.saveFileBeforeRun": true,
+    //"code-runner.ignoreSelection": true, 
+    // Zen Mode
+    "zenMode.centerLayout": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideTabs": false,
+    "cSpell.language": "en,en-GB",
+    //Latex
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.viewer.command": "zathura",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "--synctex-editor-command",
+        "code --reuse-window -g \"%{input}:%{line}\"",
+        "%PDF%"
+    ],
+    "latex-workshop.view.pdf.external.synctex.command": "zathura",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "--synctex-forward=%LINE%:0:%TEX%",
+        "%PDF%"
+    ],
+    "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.view.pdf.zoom": "page-width",
+    "latex-workshop.latexindent.path": "/home/<username>/bin/latexindent.pl",
+    "python.showStartPage": false,
+    "markdown.extension.math.enabled": false,
+    "workbench.colorTheme": "Predawn",
+    "cSpell.enableFiletypes": [
+        "toml"
+    ],
+    "code-runner.enableAppInsights": false,
+}
