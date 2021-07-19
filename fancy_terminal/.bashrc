@@ -7,6 +7,7 @@
 # Install the following packages:
 # 1. LSD: https://github.com/Peltoche/lsd
 # 2. BAT: https://github.com/sharkdp/bat
+# 3. BPYTOP: https://github.com/aristocratos/bpytop
 
 
 #--------------------Start Fancy Terminal---------------------
@@ -65,6 +66,10 @@ command -v bat > /dev/null && \
     alias bat='bat --theme=ansi-$([ "$COLOR_SCHEME" = "light" ] && echo "light" || echo "dark")' && \
     alias cat='bat --pager=never' && \
     alias less='bat'
+ 
+# bpytop
+# See if top alias is already set to htop or something else
+command -v bpytop > /dev/null && alias top='bpytop'
     
 #--------------------------------------------------------------
 ## Custom prompt
