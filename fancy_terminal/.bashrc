@@ -62,8 +62,9 @@ command -v colorls > /dev/null && alias ls='colorls --sd --gs' && \
 [ -x /usr/bin/dircolors ] && eval "$(dircolors -b)"
 
 # cat & less
+# use batcat instead of cat if installed in debian based systems
 command -v bat > /dev/null && \
-    alias bat='bat --theme=ansi-$([ "$COLOR_SCHEME" = "light" ] && echo "light" || echo "dark")' && \
+    alias bat='bat --theme=ansi' && \
     alias cat='bat --pager=never' && \
     alias less='bat'
  
